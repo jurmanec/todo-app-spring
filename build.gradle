@@ -29,3 +29,7 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+// The bootJar task creates build/libs/todo-app.jar (simplifies Procfile).
+tasks.named('bootJar') {
+	archiveFileName = 'todo-app.jar'
+}
